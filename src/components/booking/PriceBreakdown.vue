@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { formatCurrency } from '../../utils/format'
 
-const props = defineProps<{
+defineProps<{
   pricePerPerson: number
   participants: number
 }>()
