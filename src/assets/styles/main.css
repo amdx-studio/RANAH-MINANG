@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-maroon: #6B1D26;
+  --color-maroon-dark: #4A1119;
+  --color-gold: #C89B3C;
+  --color-cream: #F3ECDD;
+  --color-offwhite: #FBF9F4;
+  --color-charcoal: #2A211C;
+  --color-green: #4B6B4F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-offwhite text-charcoal font-sans antialiased;
+  font-feature-settings: 'ss01' on;
+}
+
+::selection {
+  background-color: var(--color-gold);
+  color: var(--color-maroon-dark);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: theme('colors.maroon.DEFAULT'); border-radius: 999px; opacity: .4; }
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-maroon px-6 py-3.5 text-sm font-semibold text-offwhite
+      transition-all duration-300 ease-out hover:bg-maroon-dark hover:shadow-soft hover:-translate-y-0.5
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold
+      active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-charcoal/15 bg-transparent px-6 py-3.5 text-sm font-semibold text-charcoal
+      transition-all duration-300 ease-out hover:border-charcoal hover:-translate-y-0.5
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-maroon
+      active:translate-y-0;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3.5 text-sm font-semibold text-maroon-dark
+      transition-all duration-300 ease-out hover:bg-gold-light hover:shadow-soft hover:-translate-y-0.5
+      focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-maroon
+      active:translate-y-0 disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .card-surface {
+    @apply rounded-3xl bg-white shadow-card ring-1 ring-charcoal/5 transition-all duration-300;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-gold-dark;
+  }
+
+  .heading-display {
+    @apply font-display font-medium tracking-tight text-charcoal;
+  }
+
+  .fade-up-init {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  .fade-up-in {
+    animation: fadeUpKf 0.8s cubic-bezier(.2,.65,.3,1) forwards;
+  }
+
+  @keyframes fadeUpKf {
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Page transition */
+.page-fade-enter-active,
+.page-fade-leave-active {
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+.page-fade-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.page-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}

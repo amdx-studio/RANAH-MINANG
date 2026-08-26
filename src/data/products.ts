@@ -1,0 +1,78 @@
+import type { Product } from './types'
+
+export const products: Product[] = [
+  {
+    slug: 'rendang-kemasan',
+    name: 'Rendang Kemasan Premium',
+    category: 'Food',
+    seller: 'Dapur Ibu Yanti',
+    price: 65000,
+    rating: 4.9,
+    image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    slug: 'kerupuk-sanjai',
+    name: 'Kerupuk Sanjai Balado',
+    category: 'Food',
+    seller: 'UMKM Bukittinggi',
+    price: 25000,
+    rating: 4.7,
+    image: 'https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    slug: 'kain-songket-mini',
+    name: 'Kain Songket Mini',
+    category: 'Craft',
+    seller: 'Tenun Ibu Marlina',
+    price: 350000,
+    rating: 5.0,
+    image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    slug: 'anyaman-pandan',
+    name: 'Anyaman Pandan Handmade',
+    category: 'Craft',
+    seller: 'Kelompok Anyaman Sikek',
+    price: 85000,
+    rating: 4.6,
+    image: 'https://images.unsplash.com/photo-1528295184318-6b5c6103a5da?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    slug: 'miniatur-rumah-gadang',
+    name: 'Miniatur Rumah Gadang',
+    category: 'Souvenir',
+    seller: 'Kriya Kayu Minang',
+    price: 150000,
+    rating: 4.8,
+    image: 'https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    slug: 'kopi-arabika-solok',
+    name: 'Kopi Arabika Solok',
+    category: 'Local Products',
+    seller: 'Petani Kopi Solok',
+    price: 55000,
+    rating: 4.9,
+    image: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    slug: 'gula-saka',
+    name: 'Gula Saka Asli',
+    category: 'Local Products',
+    seller: 'Petani Tebu Payakumbuh',
+    price: 30000,
+    rating: 4.5,
+    image: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    slug: 'kaos-ranah-minang',
+    name: 'Kaos Ranah Minang',
+    category: 'Souvenir',
+    seller: 'Ranah Minang Store',
+    price: 95000,
+    rating: 4.6,
+    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80',
+  },
+]
+
+export const productCategories = ['All', 'Food', 'Craft', 'Souvenir', 'Local Products'] as const
