@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { Menu, X, Compass } from 'lucide-vue-next'
+import { Menu, X } from 'lucide-vue-next'
+import logo from '../../assets/images/logo.png'
 
 const route = useRoute()
 const scrolled = ref(false)
@@ -32,9 +33,9 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
     <div class="container-page flex h-20 items-center justify-between">
       <RouterLink to="/" class="flex items-center gap-2 group">
         <span
-          class="flex h-9 w-9 items-center justify-center rounded-full bg-maroon text-gold transition-transform duration-300 group-hover:rotate-6"
+          class="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full ring-1 ring-charcoal/10 transition-transform duration-300 group-hover:rotate-6"
         >
-          <Compass :size="18" />
+          <img :src="logo" alt="Ranah Minang" class="h-full w-full object-cover" />
         </span>
         <span class="font-display text-lg font-semibold tracking-tight text-charcoal">
           RANAH <span class="text-maroon">MINANG</span>

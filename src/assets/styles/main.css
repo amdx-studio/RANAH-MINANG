@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --color-maroon: #6B1D26;
-  --color-maroon-dark: #4A1119;
-  --color-gold: #C89B3C;
-  --color-cream: #F3ECDD;
-  --color-offwhite: #FBF9F4;
-  --color-charcoal: #2A211C;
-  --color-green: #4B6B4F;
+  --color-maroon: #111111;
+  --color-maroon-dark: #000000;
+  --color-gold: #F5C518;
+  --color-cream: #FAFAFA;
+  --color-offwhite: #FFFFFF;
+  --color-charcoal: #111111;
+  --color-green: #111111;
 }
 
 html {

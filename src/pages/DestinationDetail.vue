@@ -45,7 +45,7 @@ const highlights = [
       >
         <Heart
           :size="17"
-          :fill="favoriteStore.isDestinationFavorite(destination.slug) ? '#6B1D26' : 'none'"
+          :fill="favoriteStore.isDestinationFavorite(destination.slug) ? '#111111' : 'none'"
           :class="favoriteStore.isDestinationFavorite(destination.slug) ? 'text-maroon' : 'text-charcoal/60'"
         />
       </button>

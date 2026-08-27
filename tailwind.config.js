@@ -4,25 +4,31 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Primary dark accent (was maroon) — now Black
         maroon: {
-          DEFAULT: '#6B1D26',
-          light: '#8A2C36',
-          dark: '#4A1119',
+          DEFAULT: '#111111',
+          light: '#2E2E2E',
+          dark: '#000000',
         },
+        // Highlight / CTA accent (was gold) — now Yellow
         gold: {
-          DEFAULT: '#C89B3C',
-          light: '#E0BE6C',
-          dark: '#A67C2A',
+          DEFAULT: '#F5C518',
+          light: '#FFDE59',
+          dark: '#CC9F00',
         },
-        cream: '#F3ECDD',
-        offwhite: '#FBF9F4',
+        // Soft alt-section background — near white
+        cream: '#FAFAFA',
+        // Main background — pure white
+        offwhite: '#FFFFFF',
+        // Body text / dark surfaces — Black
         charcoal: {
-          DEFAULT: '#2A211C',
-          light: '#4A3D34',
+          DEFAULT: '#111111',
+          light: '#3D3D3D',
         },
+        // Supportive tag color (was green) — kept in Black/Yellow family
         green: {
-          DEFAULT: '#4B6B4F',
-          light: '#6C8C6F',
+          DEFAULT: '#111111',
+          light: '#3D3D3D',
         },
       },
       fontFamily: {
@@ -30,11 +36,11 @@ export default {
         display: ['"Fraunces"', 'serif'],
       },
       backgroundImage: {
-        'gonjong-pattern': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 4 L60 40 L52 40 L52 76 L28 76 L28 40 L20 40 Z' fill='%23C89B3C' fill-opacity='0.06'/%3E%3C/svg%3E\")",
+        'gonjong-pattern': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 4 L60 40 L52 40 L52 76 L28 76 L28 40 L20 40 Z' fill='%23F5C518' fill-opacity='0.08'/%3E%3C/svg%3E\")",
       },
       boxShadow: {
-        soft: '0 10px 40px -12px rgba(42, 33, 28, 0.25)',
-        card: '0 4px 24px -6px rgba(42, 33, 28, 0.12)',
+        soft: '0 10px 40px -12px rgba(17, 17, 17, 0.25)',
+        card: '0 4px 24px -6px rgba(17, 17, 17, 0.12)',
       },
       animation: {
         'fade-up': 'fadeUp 0.7s ease forwards',

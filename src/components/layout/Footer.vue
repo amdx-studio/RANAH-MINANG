@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
-import { Compass, Instagram, Facebook, Youtube } from 'lucide-vue-next'
+import { Instagram, Facebook, Youtube } from 'lucide-vue-next'
+import logo from '../../assets/images/logo.png'
 </script>
 
 <template>
@@ -8,8 +9,8 @@ import { Compass, Instagram, Facebook, Youtube } from 'lucide-vue-next'
     <div class="container-page grid grid-cols-1 gap-10 py-16 md:grid-cols-4">
       <div class="md:col-span-2">
         <div class="flex items-center gap-2">
-          <span class="flex h-9 w-9 items-center justify-center rounded-full bg-gold text-maroon-dark">
-            <Compass :size="18" />
+          <span class="flex h-9 w-9 items-center justify-center overflow-hidden rounded-full ring-1 ring-offwhite/15">
+            <img :src="logo" alt="Ranah Minang" class="h-full w-full object-cover" />
           </span>
           <span class="font-display text-lg font-semibold text-offwhite">RANAH MINANG</span>
         </div>
