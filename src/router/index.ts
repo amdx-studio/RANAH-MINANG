@@ -13,6 +13,7 @@ const router = createRouter({
     { path: '/experiences', name: 'experiences', component: () => import('../pages/Experiences.vue') },
     { path: '/experience/:slug', name: 'experience-detail', component: () => import('../pages/ExperienceDetail.vue') },
     { path: '/journey', name: 'journey', component: () => import('../pages/Journey.vue') },
+    { path: '/journey/:slug', name: 'journey-detail', component: () => import('../pages/JourneyDetail.vue') },
     { path: '/community', name: 'community', component: () => import('../pages/Community.vue') },
     { path: '/marketplace', name: 'marketplace', component: () => import('../pages/Marketplace.vue') },
     { path: '/booking', name: 'booking', component: () => import('../pages/Booking.vue') },

@@ -1,5 +1,11 @@
 import type { Experience } from './types'
 
+import bukitLambungImg from '../assets/images/bukit-lambung.png'
+import museumAdityawarmanImg from '../assets/images/museum-adityawarman.png'
+import lembahHarauImg from '../assets/images/lembah-harau.png'
+import pasarKulinerMinangImg from '../assets/images/pasar-kuliner-minang.png'
+import kampungTenunPandaiSikekImg from '../assets/images/kampung-tenun-pandai-sikek.png'
+
 export const experiences: Experience[] = [
   {
     slug: 'bukit-lambung-community-experience',
@@ -9,7 +15,7 @@ export const experiences: Experience[] = [
     duration: '4 hours',
     price: 100000,
     rating: 4.8,
-    image: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80',
+    image: bukitLambungImg,
     shortDescription: 'Trek the ridge trails of Bukit Lambung guided by the people who call it home.',
     included: [
       'Entrance Ticket',
@@ -37,7 +43,7 @@ export const experiences: Experience[] = [
     duration: '2 hours',
     price: 75000,
     rating: 4.6,
-    image: 'https://images.unsplash.com/photo-1518998053901-5348d3961a04?auto=format&fit=crop&w=1200&q=80',
+    image: museumAdityawarmanImg,
     shortDescription: 'A guided walk through Minangkabau manuscripts, textiles, and matrilineal history.',
     included: ['Entrance Ticket', 'Local Guide', 'Traditional Welcome Drink', 'Cultural Storytelling'],
     timeline: [
@@ -56,7 +62,7 @@ export const experiences: Experience[] = [
     duration: '5 hours',
     price: 120000,
     rating: 4.9,
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1200&q=80',
+    image: lembahHarauImg,
     shortDescription: 'Walk beneath towering limestone cliffs and hidden waterfalls with a village guide.',
     included: ['Entrance Ticket', 'Local Guide', 'Local Snack', 'Nature Exploration'],
     timeline: [
@@ -75,7 +81,7 @@ export const experiences: Experience[] = [
     duration: '2.5 hours',
     price: 90000,
     rating: 4.7,
-    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80',
+    image: pasarKulinerMinangImg,
     shortDescription: 'Taste your way through family-run stalls serving generations-old recipes.',
     included: ['Local Guide', 'Tasting Portions x6', 'Traditional Welcome Drink'],
     timeline: [
@@ -94,7 +100,7 @@ export const experiences: Experience[] = [
     duration: '3 hours',
     price: 130000,
     rating: 4.8,
-    image: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80',
+    image: kampungTenunPandaiSikekImg,
     shortDescription: 'Sit at the loom with local weavers and learn the basics of songket craft.',
     included: ['Local Guide', 'Weaving Materials', 'Traditional Welcome Drink', 'Cultural Storytelling'],
     timeline: [
