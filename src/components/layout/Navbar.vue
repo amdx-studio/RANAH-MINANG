@@ -27,8 +27,8 @@ onUnmounted(() => window.removeEventListener('scroll', onScroll))
 
 <template>
   <header
-    class="sticky top-0 z-50 transition-all duration-300"
-    :class="scrolled ? 'bg-offwhite/90 backdrop-blur-md shadow-sm' : 'bg-transparent'"
+    class="sticky top-0 z-50 border-b border-charcoal/10 bg-offwhite/95 backdrop-blur-md transition-shadow duration-300"
+    :class="scrolled ? 'shadow-sm' : ''"
   >
     <div class="container-page flex h-20 items-center justify-between">
       <RouterLink to="/" class="flex items-center gap-2 group">

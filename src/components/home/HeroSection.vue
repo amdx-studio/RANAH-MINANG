@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 import { ArrowRight, PlayCircle } from 'lucide-vue-next'
+import rumahGadang from '../../assets/images/rumahgadang.png'
 </script>
 
 <template>
   <section class="relative overflow-hidden bg-charcoal">
     <div class="absolute inset-0">
       <img
-        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2000&q=80"
+        :src="rumahGadang"
         alt="Minangkabau highland landscape"
         class="h-full w-full scale-105 object-cover opacity-70"
       />
@@ -28,7 +29,7 @@ import { ArrowRight, PlayCircle } from 'lucide-vue-next'
       <path d="M1060 220 L1140 70 L1110 70 L1110 10 L1050 10 L1050 70 L1020 70 Z" />
     </svg>
 
-    <div class="container-page relative flex min-h-[86vh] flex-col justify-end pb-20 pt-40 sm:min-h-[92vh]">
+    <div class="container-page relative flex min-h-[80vh] flex-col justify-end pb-20 pt-16 sm:min-h-[86vh] sm:pt-20">
       <p v-reveal class="eyebrow mb-5 text-gold">Ranah Minang · West Sumatra</p>
       <h1 v-reveal="{ delay: 80 }" class="heading-display max-w-3xl text-4xl text-offwhite sm:text-6xl lg:text-[4.2rem] leading-[1.05]">
         Discover the Soul of Minangkabau

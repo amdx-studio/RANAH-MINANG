@@ -1,12 +1,19 @@
 import type { CommunityMember } from './types'
 
+import member1 from '../assets/images/1.png'
+import member2 from '../assets/images/2.png'
+import member3 from '../assets/images/3.png'
+import member4 from '../assets/images/4.png'
+import member5 from '../assets/images/5.png'
+import member6 from '../assets/images/6.png'
+
 export const communities: CommunityMember[] = [
   {
     slug: 'pak-ridwan',
     name: 'Pak Ridwan',
     role: 'Local Guide',
     location: 'Bukit Lambung',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
+    image: member1,
     story:
       'Pak Ridwan has guided travelers across Bukit Lambung for over a decade, turning every trail into a story about the land his family has farmed for three generations.',
   },
@@ -15,7 +22,7 @@ export const communities: CommunityMember[] = [
     name: 'Ibu Yanti',
     role: 'Local Culinary',
     location: 'Pasar Kuliner Minang',
-    image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=80',
+    image: member2,
     story:
       'Ibu Yanti runs a family rendang stall passed down from her grandmother, and now welcomes travelers to taste recipes that rarely leave the kampung.',
   },
@@ -24,18 +31,36 @@ export const communities: CommunityMember[] = [
     name: 'Ibu Marlina',
     role: 'Local Crafts',
     location: 'Kampung Tenun Pandai Sikek',
-    image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80',
+    image: member3,
     story:
       'A master weaver of songket, Ibu Marlina now teaches visitors the patience and precision behind every thread of Minangkabau textile tradition.',
   },
   {
-    slug: 'pak-hendri',
-    name: 'Pak Hendri',
+    slug: 'ibu-sari',
+    name: 'Ibu Sari',
     role: 'Cultural Experience',
     location: 'Museum Adityawarman',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+    image: member4,
     story:
-      'A cultural storyteller and museum host, Pak Hendri brings Minangkabau manuscripts and matrilineal history to life for every visitor who walks through.',
+      'A cultural storyteller and museum host, Ibu Sari brings Minangkabau manuscripts and matrilineal history to life for every visitor who walks through.',
+  },
+  {
+    slug: 'ibu-nova',
+    name: 'Ibu Nova',
+    role: 'Local Guide',
+    location: 'Lembah Harau',
+    image: member5,
+    story:
+      'Ibu Nova grew up beneath the cliffs of Harau Valley and now leads travelers along the safest, most scenic routes through her home village.',
+  },
+  {
+    slug: 'ibu-desi',
+    name: 'Ibu Desi',
+    role: 'Cultural Experience',
+    location: 'Jam Gadang',
+    image: member6,
+    story:
+      'Ibu Desi has spent her life around the square of Jam Gadang, sharing the stories of Bukittinggi passed down through her family of local vendors.',
   },
 ]
 

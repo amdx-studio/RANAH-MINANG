@@ -26,10 +26,20 @@ body {
   color: var(--color-maroon-dark);
 }
 
-/* Scrollbar */
-::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: theme('colors.maroon.DEFAULT'); border-radius: 999px; opacity: .4; }
+/* Scrollbar hidden — keeps scrolling functional, just removes the visible
+   bar so the site feels more like a native mobile app. */
+html,
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / legacy Edge */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge (Chromium) */
+  width: 0;
+  height: 0;
+}
 
 @layer components {
   .container-page {
